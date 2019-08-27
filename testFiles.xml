@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parallel test runs" parallel="tests" thread-count="4">
+
+    <test name="DSS-Automation">
+        <classes>
+            <class name="Login.LoginTest"></class>
+        </classes>
+    </test>
+</suite>

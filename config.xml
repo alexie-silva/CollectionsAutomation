@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties version="1.0">
+    <comment>ADVANCED COLLECTIONS</comment>
+    <!-- GENERAL CONFIG -->
+
+<!-- Chrome, Firefox, IE -->
+    <entry key="browser">IE</entry>
+<!-- Project URL -->
+    <entry key="url">https://dev-cwx-sql1.corp.rubik.com.au/CWX_RADR_AT/SignIn.aspx</entry>
+<!-- Data File Location -->
+    <!--entry key="sourceFile">excelFiles/TestData.xlsx</entry-->
+    <entry key="dataFilename">TestData.xlsx</entry>
+<!-- LOGIN DETAILS -->
+    <entry key="username">Manager</entry>
+    <entry key="password">Cworks123</entry>
+
+<!-- EMAIL CONFIG -->
+    <entry key="senderEmailID">temenosautomation@gmail.com</entry>
+    <entry key="senderPassword">DSScollections</entry>
+    <entry key="receiverEmailIDCommaSeparated">clariz.sampang@dss.asia</entry>
+    <entry key="emailSubject">Advanced Collections Automation Result</entry>
+    <entry key="reportFilename">extentReport.html</entry>
+    <entry key="reportPath">\\test-output\\</entry>
+</properties>

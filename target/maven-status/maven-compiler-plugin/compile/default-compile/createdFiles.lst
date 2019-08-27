@@ -1,0 +1,8 @@
+PageObject\LoginPage\LoginPage.class
+PageObject\LogoutPage\LogoutPage.class
+PageObjectImplementation\LogoutModule\LogoutPageActions.class
+Utilities\Action$SMTPAuthenticator.class
+Login\LoginTest.class
+Utilities\TestInitialize.class
+PageObjectImplementation\LoginModule\LoginPageActions.class
+Utilities\Action.class

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default Suite]">
+  <test name="temenosautomation(failed)">
+    <classes>
+      <class name="test_Shakeout">
+        <methods>
+          <include name="testlogin"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- test_Shakeout -->
+      <class name="test_click">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- test_click -->
+    </classes>
+  </test> <!-- temenosautomation(failed) -->
+</suite> <!-- Failed suite [Default Suite] -->
