@@ -39,10 +39,7 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.Calendar;
-import java.util.Enumeration;
-import java.util.Properties;
-import java.util.Random;
+import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 public class Action {
@@ -54,6 +51,10 @@ public class Action {
     JavascriptExecutor executor = (JavascriptExecutor)driver;
     Workbook workbook = initExcel(readXml("dataFilename"));
     WebDriverWait wait;
+
+    private static Set<String> _currentWindows;
+    private static String _lastWindow= "";
+
 // -------- SELECT BROWSER -------- //
     public void openBrowser(String browser) {
         try {
@@ -743,10 +744,50 @@ public class Action {
     public void switchFrame(String xpath){
         try {
             driver.switchTo().frame(driver.findElement(By.xpath(xpath)));
+            System.out.println("-->ACTION: SWITCH TO FRAME " + xpath + " IS SUCCESSFUL");
         }
         catch (Exception e){
-            System.out.println("Frame " + xpath + " not found upon switching");
+            System.out.println("***FAILED TO SWITCH TO FRAME" + xpath);
         }
     }
+
+
+    public void switchDefault(){
+        try {
+            driver.switchTo().defaultContent();
+            System.out.println("-->ACTION: SWITCH TO DEFAULT FRAME IS SUCCESSFUL");
+        }
+        catch (Exception e){
+            System.out.println("***FAILED TO SWITCH TO DEFAULT FRAME");
+        }
+    }
+
+    public void ToNewWindow(){
+        try{
+            //driver.switchTo().defaultContent();
+            driver.switchTo().window(getNewWindow());
+            System.out.println("-->ACTION: SWITCH TO NEW WINDOW IS SUCCESSFUL");
+        }
+        catch (Exception e){
+            System.out.println("***FAILED TO SWITCH TO NEW WINDOW");
+        }
+    }
+
+    private String getNewWindow(){
+        Set<String> _windows = driver.getWindowHandles();
+
+        String _newWindow = "";
+
+        for(String x: _windows){
+            if(!_currentWindows.contains(x)){
+                _newWindow = x;
+                break;
+            }
+        }
+        _currentWindows = driver.getWindowHandles();
+        _lastWindow = _newWindow;
+        return _newWindow;
+    }
+
 //------------------------------------------------------ END CLASS ------------------------------------------------------//
 }

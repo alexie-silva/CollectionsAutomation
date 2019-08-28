@@ -1,4 +1,5 @@
 package Login;
+import PageObjectImplementation.CollectionModule.CollectionPageActions;
 import PageObjectImplementation.LoginModule.LoginPageActions;
 import PageObjectImplementation.LogoutModule.LogoutPageActions;
 import Utilities.TestInitialize;
@@ -9,6 +10,7 @@ import org.testng.annotations.Test;
 public class LoginTest extends TestInitialize {
     LoginPageActions login = new LoginPageActions();
     LogoutPageActions logout = new LogoutPageActions();
+    CollectionPageActions collection = new CollectionPageActions();
 
     @BeforeClass
     public void reportConfiguration() {
@@ -34,6 +36,16 @@ public class LoginTest extends TestInitialize {
         }
     }
 
+    @Test (priority = 1, testName = "User Login")
+    public void TC002_searchAccount() {
+        try{
+            System.out.println("USER LOGIN SUCCESSFULLY: STARTED");
+            collection.searchAccount();
+        }catch (Exception e){
+            System.out.println("***USER LOGIN SUCCESSFULLY: FAILED!");
+        }
+    }
+
 //    @Test(priority = 16, testName = "User Logout")
 //    public void TC100_userLogout() {
 //        try{
@@ -43,7 +55,7 @@ public class LoginTest extends TestInitialize {
 //            Assert.fail("***USER LOGOUT: FAILED!");
 //        }
 //    }
-    @Test (priority = 1, testName = "User Logout")
+    /*@Test (priority = 1, testName = "User Logout")
     public void TC002_userLogoutSuccessfully() {
         try{
             System.out.println("USER LOGOUT SUCCESSFULLY: STARTED");
@@ -51,7 +63,7 @@ public class LoginTest extends TestInitialize {
         }catch (Exception e){
             System.out.println("***USER LOGOUT SUCCESSFULLY: FAILED!");
         }
-    }
+    }*/
 
 
     @AfterClass
