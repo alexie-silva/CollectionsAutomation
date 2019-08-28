@@ -4,7 +4,6 @@ import PageObject.CollectionPage.CollectionPage;
 public class CollectionPageActions extends CollectionPage {
 
     public void searchAccount() throws InterruptedException {
-        switchFrame(frmHeader);
         click(lnkCollection);
 
         switchDefault();
@@ -25,7 +24,6 @@ public class CollectionPageActions extends CollectionPage {
         Thread.sleep(3000);
         click(rbtnFirstAccount);
 
-        ToNewWindow();
         waitElementToBeDisplayed(btnLHSMenu, 10);
         click(btnLHSMenu);
 

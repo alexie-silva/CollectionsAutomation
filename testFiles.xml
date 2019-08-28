@@ -3,7 +3,7 @@
 
     <test name="DSS-Automation">
         <classes>
-            <class name="Login.LoginTest"></class>
+            <class name="PaymentArrangement.PaymentArrangement_AccountLevelTest"></class>
         </classes>
     </test>
 </suite>

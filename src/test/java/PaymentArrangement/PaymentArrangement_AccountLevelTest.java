@@ -1,4 +1,4 @@
-package Login;
+package PaymentArrangement;
 import PageObjectImplementation.CollectionModule.CollectionPageActions;
 import PageObjectImplementation.LoginModule.LoginPageActions;
 import PageObjectImplementation.LogoutModule.LogoutPageActions;
@@ -7,10 +7,10 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class LoginTest extends TestInitialize {
+public class PaymentArrangement_AccountLevelTest extends TestInitialize {
     LoginPageActions login = new LoginPageActions();
-    LogoutPageActions logout = new LogoutPageActions();
     CollectionPageActions collection = new CollectionPageActions();
+    LogoutPageActions logout = new LogoutPageActions();
 
     @BeforeClass
     public void reportConfiguration() {
@@ -26,7 +26,7 @@ public class LoginTest extends TestInitialize {
         }
     }
 
-    @Test (priority = 1, testName = "User Login")
+    @Test (priority = 1, testName = "User Log in")
     public void TC001_userLoginSuccessfully() {
         try{
             System.out.println("USER LOGIN SUCCESSFULLY: STARTED");
@@ -36,39 +36,28 @@ public class LoginTest extends TestInitialize {
         }
     }
 
-    @Test (priority = 1, testName = "User Login")
-    public void TC002_searchAccount() {
-        try{
-            System.out.println("USER LOGIN SUCCESSFULLY: STARTED");
-            collection.searchAccount();
-        }catch (Exception e){
-            System.out.println("***USER LOGIN SUCCESSFULLY: FAILED!");
-        }
-    }
+     @Test(priority = 2, testName = "User Account Search")
+      public void TC002_searchAccount() {
+         try {
+             System.out.println("USER LOGIN SUCCESSFULLY: STARTED");
+             collection.searchAccount();
+         } catch (Exception e) {
+             System.out.println("***USER LOGIN SUCCESSFULLY: FAILED!");
+         }
+     }
 
-//    @Test(priority = 16, testName = "User Logout")
-//    public void TC100_userLogout() {
-//        try{
-//            System.out.println("USER LOGOUT: STARTED");
-//            login.Logout();
-//        }catch (Exception e){
-//            Assert.fail("***USER LOGOUT: FAILED!");
-//        }
-//    }
-    /*@Test (priority = 1, testName = "User Logout")
-    public void TC002_userLogoutSuccessfully() {
-        try{
+     @Test(priority = 3, testName = "User Logout")
+     public void TC003_userLogoutSuccessfully () {
+        try {
             System.out.println("USER LOGOUT SUCCESSFULLY: STARTED");
             logout.logoutToCollections();
-        }catch (Exception e){
+        } catch (Exception e) {
             System.out.println("***USER LOGOUT SUCCESSFULLY: FAILED!");
         }
-    }*/
-
+    }
 
     @AfterClass
-    public void endTest() {
+    public void endTest () {
         //driver.manage().deleteAllCookies();
     }
-//End Class
 }
