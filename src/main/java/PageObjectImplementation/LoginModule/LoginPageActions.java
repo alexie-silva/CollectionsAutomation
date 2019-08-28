@@ -6,14 +6,14 @@ public class LoginPageActions extends LoginPage {
 
     public void successfulLogin() {
             waitFor(5);
-            try {
+            /*try {
                 org.testng.Assert.assertTrue(isElementDisplayed(txtContinue));
                 click(txtContinue);
             } catch (Exception e) {
                 waitFor(5);
-            }
+            }*/
             try {
-                waitElementToBeEnabled(txtbxUsername, 5);
+                waitElementToBeEnabled(txtbxUsername, 10);
                 String user =  readXml("username");
                 String pass = readXml("password");
 
@@ -21,6 +21,9 @@ public class LoginPageActions extends LoginPage {
                 type(txtbxPassword, pass);
              //   waitFor(5);
                 click(btnLogin);
+
+                switchFrame(frmHeader);
+                Thread.sleep(3000);
                 Assert.assertTrue(isElementDisplayed(lblDashboard));
                 System.out.println("USER LOGIN SUCCESSFULLY: PASSED");
             } catch (Exception e) {

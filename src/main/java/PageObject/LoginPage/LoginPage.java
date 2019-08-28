@@ -18,9 +18,10 @@ public class LoginPage extends Action {
     */
 
 //LOGIN TEXT
-    public String txtContinue = "(//*[@id='overridelink'])";
-    public String txtbxUsername = "(//*[@id='txtUsername'])";
+    public String txtContinue = "//*[@id='overridelink']";
+    public String txtbxUsername = "//*[@id='txtUsername']";
     public String txtbxPassword = "//*[@id='txtPassword']";
-    public String lblDashboard = "(//*[@id=\"RadMenu1\"]/ul/li/a)";
-    public String btnLogin = "(//*[@id=\"btnLogin\"])";
+    public String lblDashboard = "//ul[@class='rmRootGroup rmToggleHandles rmHorizontal']";
+    public String frmHeader = "//frame[@name='cwx_header']";
+    public String btnLogin = "//*[@id=\"btnLogin\"]";
 }

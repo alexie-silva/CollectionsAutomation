@@ -4,7 +4,7 @@
     <!-- GENERAL CONFIG -->
 
 <!-- Chrome, Firefox, IE -->
-    <entry key="browser">IE</entry>
+    <entry key="browser">Chrome</entry>
 <!-- Project URL -->
     <entry key="url">https://dev-cwx-sql1.corp.rubik.com.au/CWX_RADR_AT/SignIn.aspx</entry>
 <!-- Data File Location -->
@@ -17,7 +17,7 @@
 <!-- EMAIL CONFIG -->
     <entry key="senderEmailID">temenosautomation@gmail.com</entry>
     <entry key="senderPassword">DSScollections</entry>
-    <entry key="receiverEmailIDCommaSeparated">clariz.sampang@dss.asia</entry>
+    <entry key="receiverEmailIDCommaSeparated">clariz.sampang@dss.asia, alexie.silva@dss.asia</entry>
     <entry key="emailSubject">Advanced Collections Automation Result</entry>
     <entry key="reportFilename">extentReport.html</entry>
     <entry key="reportPath">\\test-output\\</entry>

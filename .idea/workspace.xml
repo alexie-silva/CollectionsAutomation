@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22863950-3f48-4701-9db1-6f2212906353" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/PageObject/CollectionPage/CollectionPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/PageObjectImplementation/CollectionModule/CollectionActions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObject/LoginPage/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObject/LoginPage/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjectImplementation/LoginModule/LoginPageActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjectImplementation/LoginModule/LoginPageActions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Login/LoginTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/PageObject/LoginPage/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PageObject/LoginPage/LoginPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/PageObjectImplementation/LoginModule/LoginPageActions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PageObjectImplementation/LoginModule/LoginPageActions.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/extentReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/extentReport.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,21 +24,42 @@
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testNG.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/PageObject/LoginPage/LoginPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+            <state>
+              <caret column="22" selection-start-column="22" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/PageObject/LoginPage/LoginPage.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/PageObjectImplementation/LoginModule/LoginPageActions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+            <state relative-caret-position="425">
+              <caret line="25" column="35" lean-forward="true" selection-start-line="24" selection-start-column="16" selection-end-line="25" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/PageObjectImplementation/CollectionModule/CollectionActions.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/PageObject/CollectionPage/CollectionPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="61" lean-forward="true" selection-start-line="15" selection-start-column="61" selection-end-line="15" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -37,41 +67,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/PageObject/LogoutPage/LogoutPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="30" selection-start-column="30" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/PageObjectImplementation/LoginModule/LoginPageActions.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Utilities/Action.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="415" column="22" selection-start-line="415" selection-start-column="22" selection-end-line="415" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/PageObjectImplementation/LogoutModule/LogoutPageActions.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="119">
+              <caret line="7" column="57" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -79,8 +76,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="54" selection-start-line="18" selection-start-column="54" selection-end-line="18" selection-end-column="54" />
+            <state relative-caret-position="408">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
             </state>
           </provider>
         </entry>
@@ -88,8 +85,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Login/LoginTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="30" selection-start-line="30" selection-end-line="30" />
+            <state relative-caret-position="204">
+              <caret line="30" column="29" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -119,12 +116,20 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/Utilities/Action.java" />
         <option value="$PROJECT_DIR$/src/main/java/PageObject/LogoutPage/LogoutPage.java" />
-        <option value="$PROJECT_DIR$/config.xml" />
         <option value="$PROJECT_DIR$/src/main/java/PageObjectImplementation/LoginModule/LogoutPageActions.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Login/LoginTest.java" />
         <option value="$PROJECT_DIR$/testNG.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/PageObjectImplementation/LogoutModule/LogoutPageActions.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Login/LoginTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/PageObjectImplementation/PaymentArrangementModule/AccountLevelActions.java" />
+        <option value="$PROJECT_DIR$/src/main/java/PageObject/PaymentArrangementPages/AccountLevelPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/PageObject/AccountSearch/AccountSearchPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/PageObject/Collection/AccountSearchPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/PageObject/CollectionPage/AccountSearchPage.java" />
+        <option value="$PROJECT_DIR$/config.xml" />
         <option value="$PROJECT_DIR$/src/main/java/PageObject/LoginPage/LoginPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/PageObjectImplementation/LoginModule/LoginPageActions.java" />
+        <option value="$PROJECT_DIR$/src/main/java/PageObject/CollectionPage/CollectionPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/PageObjectImplementation/CollectionModule/CollectionActions.java" />
       </list>
     </option>
   </component>
@@ -142,13 +147,16 @@
     <option name="height" value="955" />
   </component>
   <component name="ProjectId" id="1PoFnHqfKDsPrK5mYU922kci40l" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -189,6 +197,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="PageObject" type="462c0819:PsiDirectoryNode" />
+              <item name="CollectionPage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CollectionsAutomation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CollectionsAutomation" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="PageObject" type="462c0819:PsiDirectoryNode" />
               <item name="LoginPage" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -207,6 +224,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="PageObjectImplementation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CollectionsAutomation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CollectionsAutomation" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="PageObjectImplementation" type="462c0819:PsiDirectoryNode" />
+              <item name="CollectionModule" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CollectionsAutomation" type="b2602c69:ProjectViewProjectNode" />
@@ -259,11 +285,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566882925876" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566950366210" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -306,6 +331,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="Login" />
       <option name="MAIN_CLASS_NAME" value="Login.LoginTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -352,24 +378,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LoginTest - 2019.08.27 at 12h 34m 56s.xml">
-      <configuration name="LoginTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="LoginTest - 2019.08.27 at 12h 36m 23s.xml">
-      <configuration name="LoginTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="LoginTest - 2019.08.27 at 12h 37m 18s.xml">
-      <configuration name="LoginTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="LoginTest - 2019.08.27 at 12h 38m 17s.xml">
-      <configuration name="LoginTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="LoginTest - 2019.08.27 at 12h 39m 40s.xml">
-      <configuration name="LoginTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="LoginTest - 2019.08.27 at 12h 40m 41s.xml">
-      <configuration name="LoginTest" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="LoginTest - 2019.08.27 at 12h 44m 02s.xml">
       <configuration name="LoginTest" configurationId="TestNG" />
     </history-entry>
@@ -382,22 +390,41 @@
     <history-entry file="LoginTest - 2019.08.27 at 12h 48m 48s.xml">
       <configuration name="LoginTest" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="LoginTest - 2019.08.27 at 13h 37m 28s.xml">
+      <configuration name="LoginTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="LoginTest - 2019.08.27 at 13h 38m 32s.xml">
+      <configuration name="LoginTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="LoginTest - 2019.08.27 at 15h 17m 36s.xml">
+      <configuration name="LoginTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="LoginTest - 2019.08.27 at 15h 18m 38s.xml">
+      <configuration name="LoginTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="LoginTest - 2019.08.27 at 15h 23m 39s.xml">
+      <configuration name="LoginTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="LoginTest - 2019.08.28 at 07h 13m 06s.xml">
+      <configuration name="LoginTest" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1920" height="960" extended-state="6" />
+    <frame x="-8" y="-8" width="1934" height="960" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25107527" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25400212" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="0" />
+      <window_info anchor="bottom" id="Messages" order="0" weight="0.32971016" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49945945" weight="0.33971903" />
-      <window_info active="true" anchor="bottom" id="Debug" order="4" sideWeight="0.49945945" visible="true" weight="0.37801933" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.49945945" visible="true" weight="0.33937198" />
+      <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.49945945" weight="0.37801933" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" />
@@ -425,10 +452,11 @@
     <entry file="file://$PROJECT_DIR$/CollectionsAutomation.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/PageObject/LoginPage/LogoutPage.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/PageObject/LoginPage/LogoutPage.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="160">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
         </state>
       </provider>
     </entry>
@@ -439,10 +467,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Utilities/Action.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        <state relative-caret-position="1015">
+          <caret line="398" column="12" lean-forward="true" selection-start-line="398" selection-start-column="12" selection-end-line="398" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Login/LoginTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="30" column="29" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/PageObject/LogoutPage/LogoutPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="57" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
         </state>
       </provider>
     </entry>
@@ -456,51 +508,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="54" selection-start-line="18" selection-start-column="54" selection-end-line="18" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Login/LoginTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/PageObject/LoginPage/LoginPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/PageObject/LogoutPage/LogoutPage.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="30" selection-start-column="30" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Utilities/Action.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="415" column="22" selection-start-line="415" selection-start-column="22" selection-end-line="415" selection-end-column="22" />
+          <caret column="22" selection-start-column="22" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/PageObjectImplementation/LoginModule/LoginPageActions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+        <state relative-caret-position="425">
+          <caret line="25" column="35" lean-forward="true" selection-start-line="24" selection-start-column="16" selection-end-line="25" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/PageObject/CollectionPage/CollectionPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="61" lean-forward="true" selection-start-line="15" selection-start-column="61" selection-end-line="15" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/PageObjectImplementation/CollectionModule/CollectionActions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
         </state>
       </provider>
     </entry>
