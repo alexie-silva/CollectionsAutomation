@@ -9,6 +9,7 @@ public class CollectionActions extends CollectionPage {
 
         switchFrame(frmContent);
         switchFrame(frmTopFrame);
+
         
     }
 }

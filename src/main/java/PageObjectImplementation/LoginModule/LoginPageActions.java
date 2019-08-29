@@ -32,12 +32,5 @@ public class LoginPageActions extends LoginPage {
             }
         }
 
-    public void Logout(){
-        try {
-            Assert.assertTrue("Login text is not Displayed", isElementDisplayed("loginText"));
-        }catch (Exception e){
-            System.out.println("***USER LOGOUT ACTION PAGE: FAILED"); }
-    }
-
 //END OF TEST//
 }
