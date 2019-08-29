@@ -4,7 +4,7 @@
 <!-- TEST CASES -->
     <test name="Test Cases">
         <classes>
-            <class name = "Login.LoginTest"/>
+            <class name = "PaymentArrangement.PaymentArrangement_AccountLevelTest"/>
             <!--<class name = ""/>-->
         </classes>
     </test>
