@@ -13,7 +13,7 @@ public class CollectionPageActions extends CollectionPage {
         switchFrame(frmTopFrame);
         Thread.sleep(3000);
         click(dpdlstCollectionStatus);
-        waitElementToBeDisplayed(dpdlstCollectionStatusActive, 10);
+        waitElementToBeDisplayed(dpdlstCollectionStatusActive, 5);
         click(dpdlstCollectionStatusActive);
 
         switchDefault();
@@ -22,10 +22,25 @@ public class CollectionPageActions extends CollectionPage {
         Thread.sleep(3000);
         switchFrame(frmSearchResults);
         Thread.sleep(3000);
+
+        String parentWinHandle = driver.getWindowHandle(); // Store the current window handle
         click(rbtnFirstAccount);
 
-        waitElementToBeDisplayed(btnLHSMenu, 10);
+        for (String handle : driver.getWindowHandles()) // Switch to new window opened
+        {
+            driver.switchTo().window(handle);
+        }
+        waitElementToBeDisplayed(btnLHSMenu, 5);
         click(btnLHSMenu);
+        click(liPaymentArrangements);
+
+        click(lnkPaymentArrangementsAddNewItem);
+        click("//li[contains(text(), 'Total Amount')]");
+        /*waitElementToBeDisplayed(lnkPaymentArrangementsAddNewItem, 5);
+        click(lnkPaymentArrangementsAddNewItem);*/
+        //driver.close(); // Close the new window, if that window no more required
+        //driver.switchTo().window(parent); // Switch back to original browser (first window)
+
 
     }
 }
