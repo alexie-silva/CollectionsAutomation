@@ -2,20 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22863950-3f48-4701-9db1-6f2212906353" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/PageObject/CollectionPage/CustomerLevelMultiInstallmentPtpPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/PageObject/CollectionPage/CustomerLevelSingleInstallmentPtpPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/PageObjectImplementation/CollectionModule/CustomerLevelMultiInstallmentPtpActions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/PageObjectImplementation/CollectionModule/CustomerLevelPageActions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/PageObjectImplementation/CollectionModule/CustomerLevelSingleInstallmentPtpActions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/CustomerLevel/CustomerLevelMultiInstallmentPtpTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/CustomerLevel/CustomerLevelSingleInstallmentPtpTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjectImplementation/CollectionModule/CollectionPageActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjectImplementation/CollectionModule/CollectionPageActions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjectImplementation/LoginModule/LoginPageActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjectImplementation/LoginModule/LoginPageActions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/Action.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/Action.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Login/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PaymentArrangement/PaymentArrangement_AccountLevelTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/DSS-automation.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/excelFiles/TestData.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/excelFiles/TestData.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObject/CollectionPage/CustomerLevelPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObject/CollectionPage/CustomerLevelPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjectImplementation/CollectionModule/CollectionActions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjectImplementation/CollectionModule/CustomerLevelActions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CustomerLevel/CustomerLevelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CustomerLevel/CustomerLevelTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/PageObjectImplementation/CollectionModule/CollectionPageActions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PageObjectImplementation/CollectionModule/CollectionPageActions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PageObjectImplementation/LoginModule/LoginPageActions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PageObjectImplementation/LoginModule/LoginPageActions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Utilities/Action$SMTPAuthenticator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/Action$SMTPAuthenticator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Utilities/Action.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/Action.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Login/LoginTest.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/extentReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/extentReport.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testFiles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testFiles.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testNG.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testNG.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,22 +30,16 @@
   <component name="CodeInsightWorkspaceSettings">
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="CollectionsAutomation" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testNG.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/PageObjectImplementation/CollectionModule/CustomerLevelSingleInstallmentPtpActions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="84" selection-start-line="6" selection-start-column="84" selection-end-line="6" selection-end-column="84" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/PageObjectImplementation/LoginModule/LoginPageActions.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="27" column="70" selection-start-line="27" selection-start-column="70" selection-end-line="27" selection-end-column="70" />
+            <state relative-caret-position="-770">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -51,49 +48,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/PageObjectImplementation/CollectionModule/CollectionPageActions.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/PageObject/CollectionPage/CustomerLevelMultiInstallmentPtpPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.9.10/testng-6.9.10.jar!/org/testng/internal/Invoker.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="437" selection-start-line="437" selection-end-line="437" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/PageObject/CollectionPage/CollectionPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+            <state relative-caret-position="238">
+              <caret line="14" column="74" selection-start-line="14" selection-start-column="74" selection-end-line="14" selection-end-column="74" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Utilities/Action.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/PageObjectImplementation/CollectionModule/CustomerLevelMultiInstallmentPtpActions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="909" column="1" lean-forward="true" selection-start-line="909" selection-start-column="1" selection-end-line="909" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="408">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/PaymentArrangement/PaymentArrangement_AccountLevelTest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Utilities/Action.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="67" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="67" />
+            <state relative-caret-position="306">
+              <caret line="51" column="59" lean-forward="true" selection-start-line="51" selection-start-column="59" selection-end-line="51" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -114,6 +90,7 @@
     <findStrings>
       <find>T001_Successful_Login</find>
       <find>window</find>
+      <find>driver</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -130,7 +107,6 @@
         <option value="$PROJECT_DIR$/src/main/java/PageObject/AccountSearch/AccountSearchPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/PageObject/Collection/AccountSearchPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/PageObject/CollectionPage/AccountSearchPage.java" />
-        <option value="$PROJECT_DIR$/config.xml" />
         <option value="$PROJECT_DIR$/src/main/java/PageObject/LoginPage/LoginPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/PageObjectImplementation/CollectionModule/CollectionActions.java" />
         <option value="$PROJECT_DIR$/src/main/java/PageObject/CollectionPage/CollectionPage.java" />
@@ -143,8 +119,19 @@
         <option value="$PROJECT_DIR$/src/test/java/PaymentArrangment/PaymentArrangement_AccountLevelTest.java" />
         <option value="$PROJECT_DIR$/testNG.xml" />
         <option value="$PROJECT_DIR$/src/test/java/PaymentArrangement/PaymentArrangement_AccountLevelTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Utilities/Action.java" />
         <option value="$PROJECT_DIR$/src/main/java/PageObjectImplementation/CollectionModule/CollectionPageActions.java" />
+        <option value="$PROJECT_DIR$/src/main/java/PageObjectImplementation/CollectionModule/CustomerLevelActions.java" />
+        <option value="$PROJECT_DIR$/src/test/java/CustomerLevel/CustomerLevelTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/PageObject/CollectionPage/CustomerLevelPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/PageObjectImplementation/CollectionModule/CustomerLevelPageActions.java" />
+        <option value="$PROJECT_DIR$/src/test/java/CustomerLevel/CustomerLevelSingleInstallmentPtpTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/CustomerLevel/CustomerLevelMultiInstallmentPtpTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/PageObject/CollectionPage/CustomerLevelMultiInstallmentPtpPage.java" />
+        <option value="$PROJECT_DIR$/config.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/Utilities/Action.java" />
+        <option value="$PROJECT_DIR$/src/main/java/PageObject/CollectionPage/CustomerLevelSingleInstallmentPtpPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/PageObjectImplementation/CollectionModule/CustomerLevelSingleInstallmentPtpActions.java" />
+        <option value="$PROJECT_DIR$/src/main/java/PageObjectImplementation/CollectionModule/CustomerLevelMultiInstallmentPtpActions.java" />
       </list>
     </option>
   </component>
@@ -156,10 +143,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="1" />
+    <option name="y" value="1" />
+    <option name="width" value="1022" />
+    <option name="height" value="766" />
   </component>
   <component name="ProjectId" id="1PoFnHqfKDsPrK5mYU922kci40l" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -171,13 +158,17 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="CollectionsAutomation" type="b2602c69:ProjectViewProjectNode" />
               <item name="CollectionsAutomation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CollectionsAutomation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CollectionsAutomation" type="462c0819:PsiDirectoryNode" />
+              <item name="excelFiles" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CollectionsAutomation" type="b2602c69:ProjectViewProjectNode" />
@@ -220,24 +211,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="PageObject" type="462c0819:PsiDirectoryNode" />
-              <item name="LoginPage" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CollectionsAutomation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CollectionsAutomation" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="PageObject" type="462c0819:PsiDirectoryNode" />
-              <item name="LogoutPage" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CollectionsAutomation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CollectionsAutomation" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="PageObjectImplementation" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -257,15 +230,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="PageObjectImplementation" type="462c0819:PsiDirectoryNode" />
               <item name="LoginModule" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CollectionsAutomation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CollectionsAutomation" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="PageObjectImplementation" type="462c0819:PsiDirectoryNode" />
-              <item name="LogoutModule" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CollectionsAutomation" type="b2602c69:ProjectViewProjectNode" />
@@ -294,33 +258,34 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="PaymentArrangement" type="462c0819:PsiDirectoryNode" />
+              <item name="CustomerLevel" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566969145938" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/Ex_Files_Selenium_EssT/Exercise Files/02_04/start" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1567751568839" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\arvin.twano\Documents\GitHub\DSSAutomation\src\main\java" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\arvin.twano\Documents\GitHub\DSSAutomation" />
       <recent name="C:\Users\arvin.twano\Documents\GitHub\DSSAutomation\src\main\Utilities" />
       <recent name="C:\Users\arvin.twano\Documents\GitHub\DSSAutomation\src\main\PageObjectImplementation\LoginModule" />
       <recent name="C:\Users\arvin.twano\Documents\GitHub\DSSAutomation\src\main\PageObject\LoginPage" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\arvin.twano\Documents\GitHub\DSSAutomation\src\main\java" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -335,11 +300,62 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="TestNG.CustomerLevelMultiInstallmentPtpTest">
     <configuration name="C:/Users/alexie.silva/Documents/GitHub/CollectionsAutomation/testNG.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="DSS-automation" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/testNG.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerLevelMultiInstallmentPtpTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="DSS-automation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="CustomerLevel.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="CustomerLevel" />
+      <option name="MAIN_CLASS_NAME" value="CustomerLevel.CustomerLevelMultiInstallmentPtpTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerLevelSingleInstallmentPtpTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="DSS-automation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="CustomerLevel.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="CustomerLevel" />
+      <option name="MAIN_CLASS_NAME" value="CustomerLevel.CustomerLevelSingleInstallmentPtpTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerLevelTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="DSS-automation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="CustomerLevel.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="CustomerLevel" />
+      <option name="MAIN_CLASS_NAME" value="CustomerLevel.CustomerLevelTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -363,30 +379,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PaymentArrangement_AccountLevelTest.loginSuccessful" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="DSSAutomation" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="PaymentArrangement.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Login" />
-      <option name="MAIN_CLASS_NAME" value="PaymentArrangement.PaymentArrangement_AccountLevelTest" />
-      <option name="METHOD_NAME" value="loginSuccessful" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="PARAMETERS" value="0" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.CustomerLevelMultiInstallmentPtpTest" />
+        <item itemvalue="TestNG.CustomerLevelSingleInstallmentPtpTest" />
+        <item itemvalue="TestNG.CustomerLevelTest" />
         <item itemvalue="TestNG.PaymentArrangement_AccountLevelTest" />
         <item itemvalue="TestNG.C:/Users/alexie.silva/Documents/GitHub/CollectionsAutomation/testNG.xml" />
-        <item itemvalue="TestNG.PaymentArrangement_AccountLevelTest.loginSuccessful" />
       </list>
     </recent_temporary>
   </component>
@@ -404,59 +403,59 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="C__Users_alexie_silva_Documents_GitHub_CollectionsAutomation_testNG_xml - 2019.08.28 at 12h 19m 02s.xml">
-      <configuration name="C:/Users/alexie.silva/Documents/GitHub/CollectionsAutomation/testNG.xml" configurationId="TestNG" />
+    <history-entry file="CustomerLevelSingleInstallmentPtpTest - 2019.09.05 at 16h 10m 32s.xml">
+      <configuration name="CustomerLevelSingleInstallmentPtpTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_alexie_silva_Documents_GitHub_CollectionsAutomation_testNG_xml - 2019.08.28 at 12h 20m 27s.xml">
-      <configuration name="C:/Users/alexie.silva/Documents/GitHub/CollectionsAutomation/testNG.xml" configurationId="TestNG" />
+    <history-entry file="CustomerLevelSingleInstallmentPtpTest - 2019.09.05 at 16h 15m 40s.xml">
+      <configuration name="CustomerLevelSingleInstallmentPtpTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_alexie_silva_Documents_GitHub_CollectionsAutomation_testNG_xml - 2019.08.28 at 12h 26m 25s.xml">
-      <configuration name="C:/Users/alexie.silva/Documents/GitHub/CollectionsAutomation/testNG.xml" configurationId="TestNG" />
+    <history-entry file="CustomerLevelSingleInstallmentPtpTest - 2019.09.05 at 16h 17m 27s.xml">
+      <configuration name="CustomerLevelSingleInstallmentPtpTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_alexie_silva_Documents_GitHub_CollectionsAutomation_testNG_xml - 2019.08.28 at 12h 29m 08s.xml">
-      <configuration name="C:/Users/alexie.silva/Documents/GitHub/CollectionsAutomation/testNG.xml" configurationId="TestNG" />
+    <history-entry file="CustomerLevelSingleInstallmentPtpTest - 2019.09.06 at 07h 40m 51s.xml">
+      <configuration name="CustomerLevelSingleInstallmentPtpTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PaymentArrangement_AccountLevelTest - 2019.08.28 at 12h 51m 23s.xml">
-      <configuration name="PaymentArrangement_AccountLevelTest" configurationId="TestNG" />
+    <history-entry file="CustomerLevelSingleInstallmentPtpTest - 2019.09.06 at 07h 43m 15s.xml">
+      <configuration name="CustomerLevelSingleInstallmentPtpTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PaymentArrangement_AccountLevelTest - 2019.08.28 at 12h 53m 51s.xml">
-      <configuration name="PaymentArrangement_AccountLevelTest" configurationId="TestNG" />
+    <history-entry file="CustomerLevelSingleInstallmentPtpTest - 2019.09.06 at 07h 54m 26s.xml">
+      <configuration name="CustomerLevelSingleInstallmentPtpTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PaymentArrangement_AccountLevelTest - 2019.08.28 at 13h 01m 00s.xml">
-      <configuration name="PaymentArrangement_AccountLevelTest" configurationId="TestNG" />
+    <history-entry file="CustomerLevelSingleInstallmentPtpTest - 2019.09.06 at 08h 18m 55s.xml">
+      <configuration name="CustomerLevelSingleInstallmentPtpTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PaymentArrangement_AccountLevelTest - 2019.08.28 at 13h 02m 29s.xml">
-      <configuration name="PaymentArrangement_AccountLevelTest" configurationId="TestNG" />
+    <history-entry file="CustomerLevelSingleInstallmentPtpTest - 2019.09.06 at 08h 21m 57s.xml">
+      <configuration name="CustomerLevelSingleInstallmentPtpTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PaymentArrangement_AccountLevelTest - 2019.08.28 at 13h 09m 59s.xml">
-      <configuration name="PaymentArrangement_AccountLevelTest" configurationId="TestNG" />
+    <history-entry file="CustomerLevelSingleInstallmentPtpTest - 2019.09.06 at 08h 59m 28s.xml">
+      <configuration name="CustomerLevelSingleInstallmentPtpTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PaymentArrangement_AccountLevelTest - 2019.08.28 at 13h 11m 33s.xml">
-      <configuration name="PaymentArrangement_AccountLevelTest" configurationId="TestNG" />
+    <history-entry file="CustomerLevelMultiInstallmentPtpTest - 2019.09.06 at 13h 43m 42s.xml">
+      <configuration name="CustomerLevelMultiInstallmentPtpTest" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1934" height="960" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2534685" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49891776" visible="true" weight="0.19722815" />
+      <window_info id="Structure" order="1" sideWeight="0.50108224" side_tool="true" weight="0.358742" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="0" weight="0.32971016" />
+      <window_info id="Favorites" order="6" sideWeight="0.50108224" side_tool="true" weight="0.358742" />
+      <window_info anchor="bottom" id="Messages" order="0" weight="0.32900432" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32900432" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.49945945" visible="true" weight="0.31280193" />
-      <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.49945945" weight="0.23309179" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49945945" visible="true" weight="0.29112554" />
+      <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.49945945" weight="0.23268399" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50054055" side_tool="true" weight="0.33971903" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50054055" side_tool="true" weight="0.33874458" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32900432" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -466,34 +465,6 @@
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2531983" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="0" weight="0.32971016" />
-      <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" weight="0.32900432" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49945945" weight="0.28030303" />
-      <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.49945945" weight="0.23309179" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50054055" side_tool="true" weight="0.33971903" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-    </layout-to-restore>
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -516,10 +487,101 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.xml">
+    <entry file="file://$PROJECT_DIR$/testFiles.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/PageObject/LogoutPage/LogoutPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="119">
+          <caret line="7" column="57" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Collection/CollectionTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/Logout/LogoutTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/PaymentArrangement/PaymentArrangement_AccountLevelTest.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.9.10/testng-6.9.10.jar!/org/testng/internal/Invoker.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="437" selection-start-line="437" selection-end-line="437" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/PageObjectImplementation/CollectionModule/CollectionActions.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/PageObject/CollectionPage/CollectionPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/PageObjectImplementation/CollectionModule/CollectionPageActions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="26" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PaymentArrangement/PaymentArrangement_AccountLevelTest.java~HEAD">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PaymentArrangement/PaymentArrangement_AccountLevelTest.java~a2b4143971ad1a66248c5f2e1df27572c2bb48af">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/lang/InterruptedException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="509">
+          <caret line="62" column="6" lean-forward="true" selection-start-line="62" selection-start-column="6" selection-end-line="62" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-510" />
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="300" column="30" selection-start-line="300" selection-start-column="30" selection-end-line="300" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Utilities/TestInitialize.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-439">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/PageObject/LoginPage/LoginPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="6" lean-forward="true" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.6.0/selenium-api-3.6.0.jar!/org/openqa/selenium/WebDriver.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.9.10/testng-6.9.10.jar!/org/testng/annotations/Test.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/CustomerLevel/CustomerLevelTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="69" lean-forward="true" selection-start-line="13" selection-start-column="69" selection-end-line="13" selection-end-column="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -533,112 +595,105 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/PageObject/LoginPage/LoginPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="22" selection-start-column="22" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testFiles.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Utilities/TestInitialize.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/PageObject/LogoutPage/LogoutPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="57" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.9.10/testng-6.9.10.jar!/org/testng/annotations/Test.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Collection/CollectionTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Logout/LogoutTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/testNG.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="84" selection-start-line="6" selection-start-column="84" selection-end-line="6" selection-end-column="84" />
+        <state relative-caret-position="170">
+          <caret line="10" column="8" lean-forward="true" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PaymentArrangement/PaymentArrangement_AccountLevelTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/CustomerLevel/CustomerLevelSingleInstallmentPtpTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="67" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="67" />
+        <state relative-caret-position="494">
+          <caret line="52" column="13" lean-forward="true" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.9.10/testng-6.9.10.jar!/org/testng/internal/Invoker.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/PageObject/CollectionPage/CustomerLevelPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="437" selection-start-line="437" selection-end-line="437" />
+        <state relative-caret-position="202">
+          <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/PageObjectImplementation/CollectionModule/CustomerLevelPageActions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="56" column="25" selection-start-line="56" selection-start-column="14" selection-end-line="56" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/PageObjectImplementation/LoginModule/LoginPageActions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="27" column="70" selection-start-line="27" selection-start-column="70" selection-end-line="27" selection-end-column="70" />
+        <state relative-caret-position="425">
+          <caret line="28" column="34" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/PageObjectImplementation/CollectionModule/CollectionPageActions.java">
+    <entry file="file://$PROJECT_DIR$/config.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        <state relative-caret-position="442">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/PageObject/CollectionPage/CollectionPage.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/PageObject/CollectionPage/CustomerLevelSingleInstallmentPtpPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        <state relative-caret-position="680">
+          <caret line="40" column="69" selection-start-line="40" selection-start-column="69" selection-end-line="40" selection-end-column="69" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Utilities/Action.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="909" column="1" lean-forward="true" selection-start-line="909" selection-start-column="1" selection-end-line="909" selection-end-column="1" />
+        <state relative-caret-position="306">
+          <caret line="51" column="59" lean-forward="true" selection-start-line="51" selection-start-column="59" selection-end-line="51" selection-end-column="59" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/PageObjectImplementation/CollectionModule/CustomerLevelSingleInstallmentPtpActions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-770">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/CustomerLevel/CustomerLevelMultiInstallmentPtpTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-102">
+          <caret line="21" column="12" lean-forward="true" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/PageObject/CollectionPage/CustomerLevelMultiInstallmentPtpPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="74" selection-start-line="14" selection-start-column="74" selection-end-line="14" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/PageObjectImplementation/CollectionModule/CustomerLevelMultiInstallmentPtpActions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
         </state>
       </provider>
     </entry>

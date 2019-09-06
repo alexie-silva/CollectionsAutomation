@@ -1,17 +1,21 @@
 package CustomerLevel;
+
+import PageObjectImplementation.CollectionModule.CustomerLevelMultiInstallmentPtpActions;
 import PageObjectImplementation.LoginModule.LoginPageActions;
 import PageObjectImplementation.LogoutModule.LogoutPageActions;
-import PageObjectImplementation.CollectionModule.CustomerLevelPageActions;
 import Utilities.TestInitialize;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class CustomerLevelTest extends TestInitialize {
+public class CustomerLevelMultiInstallmentPtpTest extends TestInitialize {
+
+
+
 
     LoginPageActions login = new LoginPageActions();
     LogoutPageActions logout = new LogoutPageActions();
-    CustomerLevelPageActions search = new CustomerLevelPageActions();
+    CustomerLevelMultiInstallmentPtpActions multiInstallmentPtp = new CustomerLevelMultiInstallmentPtpActions();
 
     @BeforeClass
     public void reportConfiguration() {
@@ -39,15 +43,16 @@ public class CustomerLevelTest extends TestInitialize {
     }
 
     @Test(priority = 2, testName = "Search Account")
-    public void TC002_userCannotCreatePTP() {
+    public void TC002_SingleInstallmentPtpTest() {
         try{
             System.out.println("USER SEARCH ACCOUNT: STARTED");
-            search.unableToCreatePTP();
+            multiInstallmentPtp.multiInstallmentPtp();
         }catch (Exception e){
             System.out.println("***USER SEARCH ACCOUNT: FAILED!");
 
         }
     }
+
 
 
   /*  @Test (priority = 3, testName = "User Logout")
@@ -66,3 +71,4 @@ public class CustomerLevelTest extends TestInitialize {
     }
 //End Class
 }
+
