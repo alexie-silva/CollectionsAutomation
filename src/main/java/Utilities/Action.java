@@ -869,12 +869,10 @@ public class Action {
         }
     }
 
-    /*public void ToNewWindow(){
+    public void ToNewWindow(){
         try{
-            //driver.switchTo().defaultContent();
-            driver.switchTo().defaultContent();
-
-            driver.switchTo().window("x");
+          //  driver.switchTo().defaultContent();
+            driver.switchTo().window(getNewWindow());
             System.out.println("-->ACTION: SWITCH TO NEW WINDOW IS SUCCESSFUL");
         }
         catch (Exception e){
@@ -906,7 +904,7 @@ public class Action {
         {
             driver.switchTo().window(winHandle);
         }
-    }*/
+    }
 }
 
 //------------------------------------------------------ END CLASS ------------------------------------------------------//
