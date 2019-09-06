@@ -15,7 +15,7 @@ public class PaymentArrangement_AccountLevelTest extends TestInitialize {
     @BeforeClass
     public void reportConfiguration() {
         try{
-        //UPDATE "suiteName" FOR EACH TEST SUITE
+            //UPDATE "suiteName" FOR EACH TEST SUITE
             String suiteName = "DSS-AUTOMATION";
             test = extent.createTest(suiteName);
             System.out.println("REPORT CONFIGURATION: PASSED");
@@ -36,25 +36,35 @@ public class PaymentArrangement_AccountLevelTest extends TestInitialize {
         }
     }
 
-     @Test(priority = 2, testName = "User Account Search")
-      public void TC002_searchAccount() {
-         try {
-             System.out.println("USER LOGIN SUCCESSFULLY: STARTED");
-             collection.searchAccount();
-         } catch (Exception e) {
-             System.out.println("***USER LOGIN SUCCESSFULLY: FAILED!");
-         }
-     }
-
-     @Test(priority = 3, testName = "User Logout")
-     public void TC003_userLogoutSuccessfully () {
+    @Test(priority = 2, testName = "User Account Search")
+    public void TC002_searchAccount() {
         try {
-            System.out.println("USER LOGOUT SUCCESSFULLY: STARTED");
-            logout.logoutToCollections();
+            System.out.println("ACCOUNT SEARCHED SUCCESSFULLY: STARTED");
+            collection.searchAccountActive();
         } catch (Exception e) {
-            System.out.println("***USER LOGOUT SUCCESSFULLY: FAILED!");
+            System.out.println("***ACCOUNT SEARCHED SUCCESSFULLY: FAILED!");
         }
     }
+
+    @Test(priority = 3, testName = "Create Disputes")
+    public void TC003_createDisputes() {
+        try {
+            System.out.println("DISPUTE CREATED SUCCESSFULLY: STARTED");
+            collection.disputes();
+        } catch (Exception e) {
+            System.out.println("***DISPUTE CREATED SUCCESSFULLY: FAILED!");
+        }
+    }
+
+//    @Test(priority = 3, testName = "User Logout")
+//    public void TC003_userLogoutSuccessfully () {
+//        try {
+//            System.out.println("USER LOGOUT SUCCESSFULLY: STARTED");
+//            logout.logoutToCollections();
+//        } catch (Exception e) {
+//            System.out.println("***USER LOGOUT SUCCESSFULLY: FAILED!");
+//        }
+//    }
 
     @AfterClass
     public void endTest () {

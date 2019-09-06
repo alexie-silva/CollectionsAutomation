@@ -449,8 +449,8 @@ public class Action {
     public String readExcel(String fileName, String sheetName, int col, int row) {
         String value = null;
         try {
-            File file = new File("excelFiles/".concat(fileName));
-            FileInputStream inputStream = new FileInputStream(file);
+            File file = new File("/excelFiles/".concat(fileName));
+            FileInputStream inputStream = new FileInputStream(currentDirectory.toString().concat(file.toString()));
             Workbook workbook = WorkbookFactory.create(inputStream);
             Sheet sheet = workbook.getSheet(sheetName);
             DataFormatter formatter = new DataFormatter();
@@ -492,6 +492,16 @@ public class Action {
         }
         return value;
     }
+
+    // -------- GET DATA FROM EXCEL SHEET -------- //
+    public String readExcel(String sheetName, int col, int row){
+        String value = null;
+        Sheet sheet = workbook.getSheet(sheetName);
+        DataFormatter formatter = new DataFormatter();
+        value = formatter.formatCellValue(sheet.getRow(row).getCell(col));
+        return value;
+    }
+
 
     // -------- WRITE A VALUE TO CONFIG.XML -------- //
     public void writeXml(String key, String value) {
@@ -904,6 +914,20 @@ public class Action {
         {
             driver.switchTo().window(winHandle);
         }
+    }
+    Set<String> currentWindows;
+    String lastWindow;
+
+    public void switchWindow(){
+        Set<String> windows = driver.getWindowHandles();
+        for(String x: windows){
+            if(!currentWindows.contains(x)){
+                lastWindow = driver.getWindowHandle();
+                driver.switchTo().defaultContent();
+                driver.switchTo().window(x);
+            }
+        }
+        currentWindows = windows;
     }
 }
 

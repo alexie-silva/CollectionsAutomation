@@ -1,0 +1,26 @@
+package PageObjectImplementation.CollectionModule;
+import PageObject.CollectionPage.CustomerLevelPage;
+public class CustomerLevelPageActions extends CustomerLevelPage {
+    public void searchAccount() throws InterruptedException {
+        String list = readXml("accountStatus");
+        click(lnkCollection);
+        switchDefault();
+        Thread.sleep(3000);
+        switchFrame(frmContent);
+        Thread.sleep(3000);
+        switchFrame(frmTopFrame);
+        Thread.sleep(3000);
+        click(dpdlstCollectionStatus);
+        waitElementToBeDisplayed(dpdlstCollectionStatusActive, 10);
+        click(dpdlstCollectionStatusActive);
+        switchDefault();
+        Thread.sleep(3000);
+        switchFrame(frmContent);
+       /*Thread.sleep(3000);
+       switchFrame(frmSearchResults);
+       Thread.sleep(3000);*/
+        //Account Page//
+        waitElementToBeDisplayed(btnLHSMenu, 10);
+        click(btnLHSMenu);
+    }
+}
