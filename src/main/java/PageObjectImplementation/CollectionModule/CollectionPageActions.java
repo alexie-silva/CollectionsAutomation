@@ -68,8 +68,7 @@ public class CollectionPageActions extends CollectionPage {
         click(btnDisputeClose);
 
         switchFrame(frmCMS);
-        String newCollectableAmount = getText("//*[@id='details']/fieldset[1]/div[1]/div[4]/div/div");
-        newCollectableAmount = newCollectableAmount.replace("$", "").replace(",", "");
+        String newCollectableAmount = getText("//*[@id='details']/fieldset[1]/div[1]/div[4]/div/div").replace("$", "").replace(",", "");
 
         float cA = Float.parseFloat(collectableAmount);
         float dA = Float.parseFloat(disputeAmount);
@@ -86,9 +85,10 @@ public class CollectionPageActions extends CollectionPage {
         click(lnkPaymentArrangementsAddNewItem);
         click(txtbxPaymentArrangementPromiseAmount);
         type(txtbxPaymentArrangementPromiseAmount, "1000");
-
-        click(btnPaymentArrangementContinue);
-
+        String paymentDate = getCurrentDate("dd-mm-yyyy");
+        type(txtbxPaymentArrangementDate, paymentDate);
+        Thread.sleep(5000);
+//        click(btnPaymentArrangementContinue);
     }
 }
 

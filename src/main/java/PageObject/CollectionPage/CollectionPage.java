@@ -33,6 +33,7 @@ public class CollectionPage extends Action {
     public String liPaymentArrangements = "//span[@title='Alt+Shift+S']";
     public String lnkPaymentArrangementsAddNewItem = "(//a[@class='Link_menu'])[2]";
     public String txtbxPaymentArrangementPromiseAmount = "//input[@id='ctl00_contentPlaceHolder_gridPromise_ctl00_ctl02_ctl03_txtAmount']";
+    public String txtbxPaymentArrangementDate = "//input[@id='ctl00_contentPlaceHolder_gridPromise_ctl00_ctl02_ctl03_rdpkStartingOn_dateInput']";
     public String btnPaymentArrangementSave = "//a[@id='ctl00_contentPlaceHolder_gridPromise_ctl00_ctl02_ctl00_lnkSave']";
     public String btnPaymentArrangementContinue = "//input[@value='Continue']";
 }
