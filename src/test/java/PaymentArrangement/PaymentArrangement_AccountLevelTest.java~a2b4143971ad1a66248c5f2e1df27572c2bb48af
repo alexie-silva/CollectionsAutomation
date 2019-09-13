@@ -1,5 +1,5 @@
 package PaymentArrangement;
-import PageObjectImplementation.CollectionModule.CollectionPageActions;
+import PageObjectImplementation.MultiPTPsModule.CollectionPageActions;
 import PageObjectImplementation.LoginModule.LoginPageActions;
 import PageObjectImplementation.LogoutModule.LogoutPageActions;
 import Utilities.TestInitialize;
