@@ -1,4 +1,4 @@
-package PageObject.MultiPTPsPage;
+package PageObject.CollectionPage;
 import Utilities.Action;
 
 public class CollectionPage extends Action {

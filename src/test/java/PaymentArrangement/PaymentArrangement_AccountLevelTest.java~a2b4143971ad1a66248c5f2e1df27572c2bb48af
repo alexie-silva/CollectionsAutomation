@@ -1,5 +1,5 @@
 package PaymentArrangement;
-import PageObjectImplementation.MultiPTPsModule.CollectionPageActions;
+import PageObjectImplementation.MultiPTPsModule.PageObjectImplementation.CollectionModule.CollectionPageActions;
 import PageObjectImplementation.LoginModule.LoginPageActions;
 import PageObjectImplementation.LogoutModule.LogoutPageActions;
 import Utilities.TestInitialize;
@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 public class PaymentArrangement_AccountLevelTest extends TestInitialize {
     LoginPageActions login = new LoginPageActions();
-    CollectionPageActions collection = new CollectionPageActions();
+    PageObjectImplementation.CollectionModule.CollectionPageActions collection = new PageObjectImplementation.CollectionModule.CollectionPageActions();
     LogoutPageActions logout = new LogoutPageActions();
 
     @BeforeClass

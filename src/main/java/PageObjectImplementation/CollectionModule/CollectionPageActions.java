@@ -1,12 +1,7 @@
-<<<<<<< HEAD:src/main/java/PageObjectImplementation/MultiPTPsModule/CollectionPageActions.java
-package PageObjectImplementation.MultiPTPsModule;
-import PageObject.MultiPTPsPage.CollectionPage;
-=======
 package PageObjectImplementation.CollectionModule;
-
 import PageObject.CollectionPage.CollectionPage;
+
 import org.testng.Assert;
->>>>>>> 723c062a79965b5a6fa44e061f2764c8e8ea3a57:src/main/java/PageObjectImplementation/CollectionModule/CollectionPageActions.java
 
 public class CollectionPageActions extends CollectionPage {
 

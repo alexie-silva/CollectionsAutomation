@@ -23,6 +23,4 @@
     <entry key="emailSubject">Advanced Collections Automation Result</entry>
     <entry key="reportFilename">extentReport.html</entry>
     <entry key="reportPath">\\test-output\\</entry>
-    <entry key="date">10092019</entry>
-    
-    </properties>
+</properties>
