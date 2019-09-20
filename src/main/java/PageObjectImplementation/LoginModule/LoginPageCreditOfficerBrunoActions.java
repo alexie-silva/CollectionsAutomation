@@ -3,7 +3,7 @@ package PageObjectImplementation.LoginModule;
 import PageObject.LoginPage.LoginPage;
 import org.junit.Assert;
 
-public class LoginPageBrunoActions extends LoginPage {
+public class LoginPageCreditOfficerBrunoActions extends LoginPage {
 
     public void successfulLogin() {
         waitFor(5);
@@ -15,7 +15,7 @@ public class LoginPageBrunoActions extends LoginPage {
             }*/
         try {
             waitElementToBeEnabled(txtbxUsername, 10);
-            String user =  readXml("bruno");
+            String user = readXml("bruno");
             String pass = readXml("passwordlow");
 
             type(txtbxUsername, user);

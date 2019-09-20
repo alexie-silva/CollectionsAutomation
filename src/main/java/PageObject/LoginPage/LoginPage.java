@@ -24,4 +24,5 @@ public class LoginPage extends Action {
     public String lblDashboard = "//ul[@class='rmRootGroup rmToggleHandles rmHorizontal']";
     public String frmHeader = "//frame[@name='cwx_header']";
     public String btnLogin = "//*[@id=\"btnLogin\"]";
+    public String btnSignIn = "//input[@id='Submit1']";
 }

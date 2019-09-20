@@ -2,7 +2,7 @@ package PageObjectImplementation.LoginModule;
 import PageObject.LoginPage.LoginPage;
 import org.junit.Assert;
 
-public class LoginPageActions extends LoginPage {
+public class LoginPageCreditOfficerSharonActions extends LoginPage {
 
     public void successfulLogin() throws InterruptedException {
         Thread.sleep(2000);
@@ -18,8 +18,8 @@ public class LoginPageActions extends LoginPage {
 //        }
         try {
             waitElementToBeEnabled(txtbxUsername, 10);
-            String user = readXml("usernameManager");
-            String pass = readXml("passwordManager");
+            String user = readXml("usernameCreditOfficer_Sharon");
+            String pass = readXml("passwordCreditOfficer_Sharon");
 
             type(txtbxUsername, user);
             type(txtbxPassword, pass);

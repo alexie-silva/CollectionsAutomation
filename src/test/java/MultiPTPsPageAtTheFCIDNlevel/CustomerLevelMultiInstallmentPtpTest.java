@@ -1,6 +1,6 @@
 package MultiPTPsPageAtTheFCIDNlevel;
 
-import PageObjectImplementation.LoginModule.LoginPageBrunoActions;
+import PageObjectImplementation.LoginModule.LoginPageCreditOfficerBrunoActions;
 import PageObjectImplementation.LogoutModule.LogoutPageActions;
 import PageObjectImplementation.MultiPTPsModule.CustomerLevelMultiInstallmentPtpActions;
 import Utilities.TestInitialize;
@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 public class CustomerLevelMultiInstallmentPtpTest extends TestInitialize {
 
 
-    LoginPageBrunoActions login = new LoginPageBrunoActions();
+    LoginPageCreditOfficerBrunoActions login = new LoginPageCreditOfficerBrunoActions();
     LogoutPageActions logout = new LogoutPageActions();
     CustomerLevelMultiInstallmentPtpActions multiInstallmentPtp = new CustomerLevelMultiInstallmentPtpActions();
 

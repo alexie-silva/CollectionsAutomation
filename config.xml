@@ -11,10 +11,13 @@
     <!--entry key="sourceFile">excelFiles/TestData.xlsx</entry-->
     <entry key="dataFilename">TestData.xlsx</entry>
 <!-- LOGIN DETAILS -->
-    <entry key="username">Manager</entry>
-    <entry key="password">Cworks123</entry>
-    <entry key="bruno">c777736</entry>
-    <entry key="passwordlow">cworks123</entry>
+    <entry key="usernameManager">Manager</entry>
+    <entry key="passwordManager">Cworks123</entry>
+    <entry key="usernameCreditOfficer_Bruno">c777736</entry>
+    <entry key="passwordCreditOfficer_Bruno">cworks123</entry>
+    <entry key="usernameCreditOfficer_Sharon">c777736</entry>
+    <entry key="passwordCreditOfficer_Sharon">cworks123</entry>
+
 
 <!-- EMAIL CONFIG -->
     <entry key="senderEmailID">temenosautomation@gmail.com</entry>

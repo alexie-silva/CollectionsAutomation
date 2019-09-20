@@ -1,5 +1,5 @@
 package SingleInstallmentPTPsForAllAccountsUnderSingleFCIDN;
-import PageObjectImplementation.LoginModule.LoginPageBrunoActions;
+import PageObjectImplementation.LoginModule.LoginPageCreditOfficerBrunoActions;
 import PageObjectImplementation.LogoutModule.LogoutPageActions;
 import PageObjectImplementation.SingleInstallmentPTPsModule.SingleInstallmentPTPsAction;
 import Utilities.TestInitialize;
@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 public class SingleInstallmentPTPs extends TestInitialize {
 
-    LoginPageBrunoActions login = new LoginPageBrunoActions();
+    LoginPageCreditOfficerBrunoActions login = new LoginPageCreditOfficerBrunoActions();
     LogoutPageActions logout = new LogoutPageActions();
     SingleInstallmentPTPsAction ptpSingleInstallment = new SingleInstallmentPTPsAction();
 
