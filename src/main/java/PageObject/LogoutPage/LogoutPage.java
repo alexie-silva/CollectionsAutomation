@@ -6,4 +6,5 @@ public class LogoutPage extends Action {
     public String lnkLogout = "(//*[@id='lnkSignOut'])";
     public String lblLogoutVerification = "(//*[@id='lblMessage'])";
     public String frmHeader = "//frame[@name='cwx_header']";
+    public String btnCancel = "//input[@name='ctl00$contentPlaceHolder$btnCancel']";
 }

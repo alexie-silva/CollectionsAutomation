@@ -21,6 +21,7 @@ public class CollectionPage extends Action {
     public String btnClose = "(//img[@class='RadWButton'])[4]";
     public String btnRequestOrCancelYes = "//button[@id='yesButton']";
     public String btnRequestOrCancelOk = "//button[@id='alertbutton']";
+    public String btnCancel = "//input[@id='ctl00_contentPlaceHolder_btnCancel']";
 
 // Disputes
     public String liDisputes = "//span[@title='Alt+Shift+R']";
@@ -35,14 +36,17 @@ public class CollectionPage extends Action {
 // Payment Arrangements
     public String liPaymentArrangements = "//span[@title='Alt+Shift+S']";
     public String lnkPaymentArrangementsAddNewItem = "(//a[@class='Link_menu'])[2]";
+    public String dpdPaymentArrangementPromiseType = "//div[@id='ctl00_contentPlaceHolder_gridPromise_ctl00_ctl02_ctl03_drpPromiseType']";
     public String txtbxPaymentArrangementPromiseAmount = "//input[@id='ctl00_contentPlaceHolder_gridPromise_ctl00_ctl02_ctl03_txtAmount']";
+    public String btnPaymentArrangementPromiseAmount = "//input[@id='ctl00_contentPlaceHolder_gridPromise_ctl00_ctl02_ctl03_btnAmount']";
     public String txtbxPaymentArrangementDate = "//input[@id='ctl00_contentPlaceHolder_gridPromise_ctl00_ctl02_ctl03_rdpkStartingOn_dateInput']";
-    public String dpdPaymentArrangementFrequency = "(//span[@class='rddlIcon'])[2]";
+    public String dpdPaymentArrangementFrequency = "//div[@id='ctl00_contentPlaceHolder_gridPromise_ctl00_ctl02_ctl03_drpPromiseTerm']";
     public String btnPaymentArrangementSave = "//a[@id='ctl00_contentPlaceHolder_gridPromise_ctl00_ctl02_ctl00_lnkSave']";
     public String btnPaymentArrangementContinue = "//input[@value='Continue']";
     public String btnPaymentArrangementContinueSave = "//input[@name='ctl00$contentPlaceHolder$btnSave']";
     public String cbxPaymentArrangement = "(//input[@name='chkPromiseID'])[1]";
     public String btnPaymentArrangementCancel = "//input[@name='ctl00$contentPlaceHolder$ucPromiseDueGridControl$btnCancel']";
+    public String tbPaymentArrangementPromiseDue = "//a[@id='tabPromiseDue']";
     public String tbPaymentArrangementPromiseHistory = "//a[@id='tabPromiseHistory']";
     public String txtbxPaymentArrangementInstalment = "//input[@name='ctl00$contentPlaceHolder$gridPromise$ctl00$ctl02$ctl03$txtFrequencyNumber']";
     public String lblPaymentArrangementDateValidation = "//span[@id='ctl00_contentPlaceHolder_gridPromise_ctl00_ctl02_ctl03_valCustomPromiseStartDateValidation']";
