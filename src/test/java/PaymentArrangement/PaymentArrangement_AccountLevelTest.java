@@ -30,13 +30,13 @@ public class PaymentArrangement_AccountLevelTest extends TestInitialize {
         }
     }
 
-    @Test (priority = 1, testName = "User Log in")
-    public void TC001_userLoginSuccessfully() {
+    @Test (priority = 1, testName = "Manager Log in")
+    public void TC001_managerLoginSuccessfully() {
         try{
-            System.out.println("USER LOGIN SUCCESSFULLY: STARTED");
+            System.out.println("MANAGER LOGIN SUCCESSFULLY: STARTED");
             login.successfulLogin();
         }catch (Exception e){
-            System.out.println("***USER LOGIN SUCCESSFULLY: FAILED!");
+            System.out.println("***MANAGER LOGIN SUCCESSFULLY: FAILED!");
         }
     }
 
@@ -70,25 +70,25 @@ public class PaymentArrangement_AccountLevelTest extends TestInitialize {
         }
     }
 
-    @Test(priority = 5, testName = "Create Correspondence Letter")
-    public void TC005_createCorrespondenceLetter() {
-        try {
-            System.out.println("CORRESPONDENCE LETTER CREATED SUCCESSFULLY: STARTED");
-            collection.correspondenceLetter();
-        } catch (Exception e) {
-            System.out.println("***CORRESPONDENCE LETTER CREATED SUCCESSFULLY: FAILED!");
-        }
-    }
-
-    @Test(priority = 6, testName = "Create Correspondence Email")
-    public void TC006_createCorrespondenceEmail() {
-        try {
-            System.out.println("CORRESPONDENCE EMAIL CREATED SUCCESSFULLY: STARTED");
-            collection.correspondenceEmail();
-        } catch (Exception e) {
-            System.out.println("***CORRESPONDENCE EMAIL CREATED SUCCESSFULLY: FAILED!");
-        }
-    }
+//    @Test(priority = 5, testName = "Create Correspondence Letter")
+//    public void TC005_createCorrespondenceLetter() {
+//        try {
+//            System.out.println("CORRESPONDENCE LETTER CREATED SUCCESSFULLY: STARTED");
+//            collection.correspondenceLetter();
+//        } catch (Exception e) {
+//            System.out.println("***CORRESPONDENCE LETTER CREATED SUCCESSFULLY: FAILED!");
+//        }
+//    }
+//
+//    @Test(priority = 6, testName = "Create Correspondence Email")
+//    public void TC006_createCorrespondenceEmail() {
+//        try {
+//            System.out.println("CORRESPONDENCE EMAIL CREATED SUCCESSFULLY: STARTED");
+//            collection.correspondenceEmail();
+//        } catch (Exception e) {
+//            System.out.println("***CORRESPONDENCE EMAIL CREATED SUCCESSFULLY: FAILED!");
+//        }
+//    }
 
     @Test(priority = 7, testName = "Cancel Payment Arrangement")
     public void TC007_cancelPaymentArrangement() {
@@ -103,42 +103,62 @@ public class PaymentArrangement_AccountLevelTest extends TestInitialize {
     @Test(priority = 8, testName = "Create Multi Installment Promise-To-Pay Full Net Debt")
     public void TC008_createMultiInstallmentPTPfullNetDebt() {
         try {
-            System.out.println("PAYMENT ARRANGEMENT CANCELLED SUCCESSFULLY: STARTED");
+            System.out.println("PAYMENT ARRANGEMENT (FULL NET DEBT) CREATED SUCCESSFULLY: STARTED");
             collection.createMultiInstallmentPTPfullNetDebt();
         } catch (Exception e) {
-            System.out.println("***PAYMENT ARRANGEMENT CANCELLED SUCCESSFULLY: FAILED!");
+            System.out.println("***PAYMENT ARRANGEMENT (FULL NET DEBT) CREATED SUCCESSFULLY: FAILED!");
         }
     }
 
     @Test(priority = 9, testName = "Create Multi Installment Promise-To-Pay Partial Net Debt")
     public void TC008_createMultiInstallmentPTPpartialNetDebt() {
         try {
-            System.out.println("PAYMENT ARRANGEMENT CANCELLED SUCCESSFULLY: STARTED");
+            System.out.println("PAYMENT ARRANGEMENT (PARTIAL NET DEBT) CREATED SUCCESSFULLY: STARTED");
             collection.createMultiInstallmentPTPpartialNetDebt();
         } catch (Exception e) {
-            System.out.println("***PAYMENT ARRANGEMENT CANCELLED SUCCESSFULLY: FAILED!");
+            System.out.println("***PAYMENT ARRANGEMENT (PARTIAL NET DEBT) CREATED SUCCESSFULLY: FAILED!");
         }
     }
 
-    @Test(priority = 9, testName = "User Logout")
-    public void TC009_userLogoutSuccessfully () {
+    @Test(priority = 9, testName = "Manager Logout")
+    public void TC009_managerLogoutSuccessfully () {
         try {
-            System.out.println("USER LOGOUT SUCCESSFULLY: STARTED");
+            System.out.println("MANAGER LOGOUT SUCCESSFULLY: STARTED");
             logout.logoutToCollections();
         } catch (Exception e) {
-            System.out.println("***USER LOGOUT SUCCESSFULLY: FAILED!");
+            System.out.println("***MANAGER LOGOUT SUCCESSFULLY: FAILED!");
         }
     }
 
-    @Test(priority = 10, testName = "User Logout")
-    public void TC010_userLoginSuccessfully() {
+    @Test(priority = 10, testName = "Credit Officer Login")
+    public void TC010_creditOfficerLoginSuccessfully() {
         try{
-            System.out.println("USER LOGIN SUCCESSFULLY: STARTED");
+            System.out.println("CREDIT OFFICER LOGIN SUCCESSFULLY: STARTED");
             loginSharon.successfulLogin();
         }catch (Exception e){
-            System.out.println("***USER LOGIN SUCCESSFULLY: FAILED!");
+            System.out.println("***CREDIT OFFICER LOGIN SUCCESSFULLY: FAILED!");
         }
     }
+
+    @Test(priority = 11, testName = "Create Single Installment Promise-To-Pay Full Net Debt")
+    public void TC010_createSingleInstallmentPTPfullNetDebt() {
+        try{
+            System.out.println("PAYMENT ARRANGEMENT (FULL NET DEBT) CREATED SUCCESSFULLY: STARTED");
+            collection.createSingleInstallmentPTPfullNetDebt();
+        }catch (Exception e){
+            System.out.println("***PAYMENT ARRANGEMENT (FULL NET DEBT) CREATED SUCCESSFULLY: FAILED!");
+        }
+    }
+
+//    @Test(priority = 11, testName = "Create Single Installment Promise-To-Pay Full Net Debt")
+//    public void TC010_createSingleInstallmentPTPpartialNetDebt() {
+//        try{
+//            System.out.println("PAYMENT ARRANGEMENT (FULL NET DEBT) CREATED SUCCESSFULLY: STARTED");
+//            loginSharon.successfulLogin();
+//        }catch (Exception e){
+//            System.out.println("***PAYMENT ARRANGEMENT (FULL NET DEBT) CREATED SUCCESSFULLY: FAILED!");
+//        }
+//    }
 
     @AfterClass
     public void endTest () {

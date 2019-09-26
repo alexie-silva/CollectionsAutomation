@@ -25,27 +25,27 @@ public class CollectionPageActions extends CollectionPage {
         switchFrame(frmTopFrame);
         Thread.sleep(1500);
 
-// Select dropdowns (Dispute)
+    // Select dropdowns (Dispute)
         click(dpdlstCollectionStatus);
         waitElementToBeDisplayed(dpdlstCollectionStatusActive, 3);
         click(dpdlstCollectionStatusActive);
 
         switchDefault();
-        Thread.sleep(1500);
+        Thread.sleep(1000);
         switchFrame(frmContent);
-        Thread.sleep(1500);
+        Thread.sleep(1000);
         switchFrame(frmSearchResults);
-        Thread.sleep(1500);
+        Thread.sleep(1000);
 
-// Get account number for future search
+    // Get account number for future search
         String accountNumber = getText(lblFirstAccountNumber);
 
         parent = driver.getWindowHandle();
 
-// Click the first account on the results
+    // Click the first account on the results
         click(rbtnFirstAccount);
 
-// Switch window
+    // Switch window
 
         for (String child : driver.getWindowHandles()) // Switch to new window opened
         {
@@ -58,10 +58,10 @@ public class CollectionPageActions extends CollectionPage {
         waitElementToBeEnabled(frmCMS, 3);
         switchFrame(frmCMS);
 
-// Get the original collectable amount removing special characters
+    // Get the original collectable amount removing special characters
         String collectableAmount = getText("//*[@id='details']/fieldset[1]/div[1]/div[4]/div/div").replace("$", "").replace(",", "");
 
-// Add Dispute
+    // Add Dispute
         switchDefault();
         click(btnLHSMenu);
         click(liDisputes);
@@ -84,10 +84,10 @@ public class CollectionPageActions extends CollectionPage {
         click(btnClose);
 
         switchFrame(frmCMS);
-// Get the text of the new collectable amount removing special characters
+    // Get the text of the new collectable amount removing special characters
         String newCollectableAmount = getText("//*[@id='details']/fieldset[1]/div[1]/div[4]/div/div").replace("$", "").replace(",", "");
 
-// Convert getText strings to float
+    // Convert getText strings to float
         float cA = Float.parseFloat(collectableAmount);
         float dA = Float.parseFloat(disputeAmount);
         float diff = cA - dA;
@@ -108,7 +108,7 @@ public class CollectionPageActions extends CollectionPage {
         waitElementToBeDisplayed(lnkPaymentArrangementsAddNewItem, 3);
         click(lnkPaymentArrangementsAddNewItem);
 
-// Get the date 15 days after today
+    // Get the date 15 days after today
         String daysAfterToday = LocalDate.now().plusDays(15).format(DateTimeFormatter.ofPattern("dd-MM-yyyy"));
 
         driver.findElement(By.xpath(txtbxPaymentArrangementPromiseAmount)).clear();
@@ -215,7 +215,8 @@ public class CollectionPageActions extends CollectionPage {
         waitElementToBeEnabled(tbPaymentArrangementPromiseHistory, 3);
         click(tbPaymentArrangementPromiseHistory);
 
-// Get the text of the last row that is constantly changing after each cancellation
+    // Get the text of the last row that is constantly changing after each cancellation
+        waitElementToBeEnabled("(//div[@id='ctl00_contentPlaceHolder_ucPromiseListGridHistory_radPromiseAccountPromiseList']//table//tr)[last()]//td[9]", 5);
         String promiseGiverPromiseHistory = getText("(//div[@id='ctl00_contentPlaceHolder_ucPromiseListGridHistory_radPromiseAccountPromiseList']//table//tr)[last()]//td[9]");
         switchDefault();
         click(btnClose);
@@ -231,21 +232,55 @@ public class CollectionPageActions extends CollectionPage {
     public void createMultiInstallmentPTPfullNetDebt() throws InterruptedException {
         String child = driver.getWindowHandle();
         if(child != null){
-            driver.close();
+            switchDefault();
+            Thread.sleep(1000);
+            waitElementToBeEnabled(btnCancel, 3);
+            click(btnCancel);
             driver.switchTo().window(parent);
         }
         switchFrame(frmHeader);
         searchAccountActive();
         switchFrame(frmCMS);
 
-// Get the net debt amount to be entered as promise amount later
+        waitElementToBeEnabled("//*[@id='source_system']/div[1]/span", 3);
+        String accountType = getText("//*[@id='source_system']/div[1]/span");
+
+        int account = 2;
+        if (!accountType.equals("FLEXCAB")) {
+            while (!accountType.equals("FLEXCAB")) {
+                switchDefault();
+                waitElementToBeEnabled(btnCancel, 3);
+                click(btnCancel);
+                driver.switchTo().window(parent);
+                switchDefault();
+                Thread.sleep(1000);
+                switchFrame(frmContent);
+                Thread.sleep(1000);
+                switchFrame(frmSearchResults);
+                Thread.sleep(1000);
+                click("(//input[@name='rdEmpID'])[" + account + "]");
+                account++;
+                for (String cms : driver.getWindowHandles()) // Switch to new window opened
+                {
+                    driver.switchTo().window(cms);
+                }
+                switchFrame(frmCMS);
+                waitElementToBeEnabled("//*[@id='account_billingNumber']/div", 3);
+                String accountNumber = getText("//*[@id='account_billingNumber']/div");
+                waitElementToBeEnabled("//*[@id='source_system']/div[1]/span", 3);
+                accountType = getText("//*[@id='source_system']/div[1]/span");
+            }
+        }
+
+    // Get the net debt amount to be entered as promise amount later
+        waitElementToBeEnabled("//*[@id='details']/fieldset[1]/div[1]/div[1]/div/div", 3);
         String netDebt = getText("//*[@id='details']/fieldset[1]/div[1]/div[1]/div/div").replace("$", "").replace(",", "");
 
-// Convert getText strings to float
+    // Convert getText strings to float
         float nD = Float.parseFloat(netDebt);
         float promiseAmount = nD / 3;
 
-// Convert float to string rounding off to 2 decimals
+    // Convert float to string rounding off to 2 decimals
 
         String newPromiseAmount = String.format("%.2f",promiseAmount);
 
@@ -281,6 +316,7 @@ public class CollectionPageActions extends CollectionPage {
         float nPa = Float.parseFloat(newPromiseAmount);
         DecimalFormat decimalFormat = new DecimalFormat("#,##0.00");
         String verifyPromiseAmount = decimalFormat.format(nPa);
+        waitElementToBeEnabled(tbPaymentArrangementPromiseDue, 3);
         try {
             Assert.assertTrue(isContainText("//*[@id='ctl00_contentPlaceHolder_ucPromiseDueGridControl_radPromiseAccountPromiseList_ctl00__0']/td[5]", verifyPromiseAmount));
             Assert.assertTrue(isContainText("//*[@id='ctl00_contentPlaceHolder_ucPromiseDueGridControl_radPromiseAccountPromiseList_ctl00__1']/td[5]", verifyPromiseAmount));
@@ -297,22 +333,55 @@ public class CollectionPageActions extends CollectionPage {
     public void createMultiInstallmentPTPpartialNetDebt() throws InterruptedException {
         String child = driver.getWindowHandle();
         if(child != null){
-            driver.close();
+            switchDefault();
+            Thread.sleep(1000);
+            waitElementToBeEnabled(btnCancel, 3);
+            click(btnCancel);
             driver.switchTo().window(parent);
         }
         switchFrame(frmHeader);
         searchAccountActive();
         switchFrame(frmCMS);
 
-// Get the net debt amount to be entered as promise amount later
+        waitElementToBeEnabled("//*[@id='source_system']/div[1]/span", 3);
+        String accountType = getText("//*[@id='source_system']/div[1]/span");
+
+        int account = 2;
+        if (!accountType.equals("FLEXCAB")) {
+            while (!accountType.equals("FLEXCAB")) {
+                switchDefault();
+                waitElementToBeEnabled(btnCancel, 3);
+                click(btnCancel);
+                driver.switchTo().window(parent);
+                switchDefault();
+                Thread.sleep(1000);
+                switchFrame(frmContent);
+                Thread.sleep(1000);
+                switchFrame(frmSearchResults);
+                Thread.sleep(1000);
+                click("(//input[@name='rdEmpID'])[" + account + "]");
+                account++;
+                for (String cms : driver.getWindowHandles()) // Switch to new window opened
+                {
+                    driver.switchTo().window(cms);
+                }
+                switchFrame(frmCMS);
+                waitElementToBeEnabled("//*[@id='account_billingNumber']/div", 3);
+                String accountNumber = getText("//*[@id='account_billingNumber']/div");
+                waitElementToBeEnabled("//*[@id='source_system']/div[1]/span", 3);
+                accountType = getText("//*[@id='source_system']/div[1]/span");
+            }
+        }
+
+    // Get the net debt amount to be entered as promise amount later
+        waitElementToBeEnabled("//*[@id='details']/fieldset[1]/div[1]/div[1]/div/div", 3);
         String netDebt = getText("//*[@id='details']/fieldset[1]/div[1]/div[1]/div/div").replace("$", "").replace(",", "");
 
-// Convert getText strings to float
+    // Convert getText strings to float
         float nD = Float.parseFloat(netDebt);
         float promiseAmount = nD / 12;
 
-// Convert float to string rounding off to 2 decimals
-
+    // Convert float to string rounding off to 2 decimals
         String newPromiseAmount = String.format("%.2f",promiseAmount);
         String daysExceed = LocalDate.now().plusDays(35).format(DateTimeFormatter.ofPattern("dd-MM-yyyy"));
         String today = getCurrentDate("dd-MM-yyyy");
@@ -351,7 +420,7 @@ public class CollectionPageActions extends CollectionPage {
         click("//div[contains(text(), 'No records to display.')]");
         waitElementToBeEnabled(dpdPaymentArrangementFrequency, 3);
         click(dpdPaymentArrangementFrequency);
-        Thread.sleep(1500);
+        Thread.sleep(1000);
         click("//li[contains(text(), 'Monthly')][1]");
         Thread.sleep(1500);
         driver.findElement(By.xpath(txtbxPaymentArrangementInstalment)).clear();
@@ -370,6 +439,7 @@ public class CollectionPageActions extends CollectionPage {
         float nPa = Float.parseFloat(newPromiseAmount);
         DecimalFormat decimalFormat = new DecimalFormat("#,##0.00");
         String verifyPromiseAmount = decimalFormat.format(nPa);
+        waitElementToBeEnabled(tbPaymentArrangementPromiseDue, 3);
         try {
             Assert.assertTrue(isContainText("//*[@id='ctl00_contentPlaceHolder_ucPromiseDueGridControl_radPromiseAccountPromiseList_ctl00__0']/td[5]", verifyPromiseAmount));
             Assert.assertTrue(isContainText("//*[@id='ctl00_contentPlaceHolder_ucPromiseDueGridControl_radPromiseAccountPromiseList_ctl00__1']/td[5]", verifyPromiseAmount));
@@ -380,7 +450,145 @@ public class CollectionPageActions extends CollectionPage {
         }
         switchDefault();
         click(btnClose);
-        driver.close();
-        driver.switchTo().window(parent);
+    }
+
+// Test Case: Single Instalment PTP against the full Net Debt of a FLEXCAB account
+    public void createSingleInstallmentPTPfullNetDebt() throws InterruptedException {
+        if (isElementDisplayed(btnCancel)) {
+            String child = driver.getWindowHandle();
+            if (child != null) {
+                switchDefault();
+                waitElementToBeEnabled(btnCancel, 3);
+                click(btnCancel);
+                driver.switchTo().window(parent);
+            }
+        }
+        switchFrame(frmHeader);
+        searchAccountActive();
+        switchFrame(frmCMS);
+
+        waitElementToBeEnabled("//*[@id='source_system']/div[1]/span", 3);
+        String accountType = getText("//*[@id='source_system']/div[1]/span");
+
+        int account = 2;
+        if (!accountType.equals("FLEXCAB")) {
+            while (!accountType.equals("FLEXCAB")) {
+                switchDefault();
+                waitElementToBeEnabled(btnCancel, 3);
+                click(btnCancel);
+                driver.switchTo().window(parent);
+                switchDefault();
+                Thread.sleep(1000);
+                switchFrame(frmContent);
+                Thread.sleep(1000);
+                switchFrame(frmSearchResults);
+                Thread.sleep(1000);
+                click("(//input[@name='rdEmpID'])[" + account + "]");
+                account++;
+                for (String cms : driver.getWindowHandles()) // Switch to new window opened
+                {
+                    driver.switchTo().window(cms);
+                }
+                switchFrame(frmCMS);
+                waitElementToBeEnabled("//*[@id='account_billingNumber']/div", 3);
+                String accountNumber = getText("//*[@id='account_billingNumber']/div");
+                waitElementToBeEnabled("//*[@id='source_system']/div[1]/span", 3);
+                accountType = getText("//*[@id='source_system']/div[1]/span");
+            }
+        }
+
+    // Get the net debt amount
+        waitElementToBeEnabled("//*[@id='details']/fieldset[1]/div[1]/div[1]/div/div", 3);
+        String netDebt = getText("//*[@id='details']/fieldset[1]/div[1]/div[1]/div/div").replace("$", "").replace(",", "");
+
+        switchDefault();
+        click(btnLHSMenu);
+        click(liPaymentArrangements);
+        switchFrame(frmLHSContent);
+        waitElementToBeDisplayed(lnkPaymentArrangementsAddNewItem, 3);
+        click(lnkPaymentArrangementsAddNewItem);
+
+        waitElementToBeEnabled(dpdPaymentArrangementPromiseType, 3);
+        click(dpdPaymentArrangementPromiseType);
+        Thread.sleep(1500);
+        click("//li[contains(text(), 'Total Amount')]");
+        waitElementToBeEnabled(btnPaymentArrangementPromiseAmount, 3);
+        click(btnPaymentArrangementPromiseAmount);
+        waitElementToBeEnabled(btnPaymentArrangementSave, 3);
+        click(btnPaymentArrangementSave);
+        waitElementToBeEnabled(btnPaymentArrangementContinue, 3);
+        click(btnPaymentArrangementContinue);
+        waitElementToBeEnabled(btnPaymentArrangementContinueSave, 3);
+        click(btnPaymentArrangementContinueSave);
+        switchDefault();
+        switchFrame(frmLHSContent);
+
+        float nD = Float.parseFloat(netDebt);
+        DecimalFormat decimalFormat = new DecimalFormat("#,##0.00");
+        String verifyPromiseAmount = decimalFormat.format(nD);
+        waitElementToBeEnabled(tbPaymentArrangementPromiseDue, 3);
+        try {
+            Assert.assertTrue(isContainText("//*[@id='ctl00_contentPlaceHolder_ucPromiseDueGridControl_radPromiseAccountPromiseList_ctl00__0']/td[5]", verifyPromiseAmount));
+            System.out.println("SINGLE INSTALLMENT PAYMENT ARRANGEMENT (FULL NET DEBT) WAS DISPLAYED ON THE PROMISE DUE TAB");
+        } catch (Exception e) {
+            System.out.println("***SINGLE INSTALLMENT PAYMENT ARRANGEMENT (FULL NET DEBT) WAS NOT DISPLAYED ON THE PROMISE DUE TAB");
+        }
+        switchDefault();
+        click(btnClose);
+    }
+
+// Single Instalment PTP against the partial Net Debt of a FLEXCAB account
+    public void createSingleInstallmentPTPpartialNetDebt() throws InterruptedException {
+        if (isElementDisplayed(btnCancel)) {
+            String child = driver.getWindowHandle();
+            if (child != null) {
+                switchDefault();
+                waitElementToBeEnabled(btnCancel, 3);
+                click(btnCancel);
+                driver.switchTo().window(parent);
+            }
+        }
+        switchFrame(frmHeader);
+        searchAccountActive();
+        switchFrame(frmCMS);
+
+        // Get the net debt amount
+        waitElementToBeEnabled("//*[@id='details']/fieldset[1]/div[1]/div[1]/div/div", 3);
+        String netDebt = getText("//*[@id='details']/fieldset[1]/div[1]/div[1]/div/div").replace("$", "").replace(",", "");
+
+        switchDefault();
+        click(btnLHSMenu);
+        click(liPaymentArrangements);
+        switchFrame(frmLHSContent);
+        waitElementToBeDisplayed(lnkPaymentArrangementsAddNewItem, 3);
+        click(lnkPaymentArrangementsAddNewItem);
+
+        waitElementToBeEnabled(dpdPaymentArrangementPromiseType, 3);
+        click(dpdPaymentArrangementPromiseType);
+        Thread.sleep(1500);
+        click("//li[contains(text(), 'Total Amount')]");
+        waitElementToBeEnabled(btnPaymentArrangementPromiseAmount, 3);
+        click(btnPaymentArrangementPromiseAmount);
+        waitElementToBeEnabled(btnPaymentArrangementSave, 3);
+        click(btnPaymentArrangementSave);
+        waitElementToBeEnabled(btnPaymentArrangementContinue, 3);
+        click(btnPaymentArrangementContinue);
+        waitElementToBeEnabled(btnPaymentArrangementContinueSave, 3);
+        click(btnPaymentArrangementContinueSave);
+        switchDefault();
+        switchFrame(frmLHSContent);
+
+        float nD = Float.parseFloat(netDebt);
+        DecimalFormat decimalFormat = new DecimalFormat("#,##0.00");
+        String verifyPromiseAmount = decimalFormat.format(nD);
+        waitElementToBeEnabled(tbPaymentArrangementPromiseDue, 3);
+        try {
+            Assert.assertTrue(isContainText("//*[@id='ctl00_contentPlaceHolder_ucPromiseDueGridControl_radPromiseAccountPromiseList_ctl00__0']/td[5]", verifyPromiseAmount));
+            System.out.println("SINGLE INSTALLMENT PAYMENT ARRANGEMENT (FULL NET DEBT) WAS DISPLAYED ON THE PROMISE DUE TAB");
+        } catch (Exception e) {
+            System.out.println("***SINGLE INSTALLMENT PAYMENT ARRANGEMENT (FULL NET DEBT) WAS NOT DISPLAYED ON THE PROMISE DUE TAB");
+        }
+        switchDefault();
+        click(btnClose);
     }
 }

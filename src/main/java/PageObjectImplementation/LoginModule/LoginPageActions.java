@@ -6,7 +6,6 @@ public class LoginPageActions extends LoginPage {
 
     public void successfulLogin() throws InterruptedException {
         Thread.sleep(2000);
-
         if(isElementDisplayed(btnSignIn)){
             click(btnSignIn);
         }

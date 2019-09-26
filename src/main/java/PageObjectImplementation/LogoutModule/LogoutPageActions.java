@@ -1,12 +1,22 @@
 package PageObjectImplementation.LogoutModule;
 import PageObject.LogoutPage.LogoutPage;
 import org.junit.Assert;
-import java.io.IOException;
 
 public class LogoutPageActions extends LogoutPage {
 
-    public void logoutToCollections() throws IOException, InterruptedException {
-
+    public void logoutToCollections() throws InterruptedException {
+        Thread.sleep(2000);
+        String parent = driver.getWindowHandle();
+        for (String child : driver.getWindowHandles()) // Switch to new window opened
+        {
+            if (!child.equals(parent)) {
+                switchDefault();
+                Thread.sleep(1000);
+                waitElementToBeEnabled(btnCancel, 3);
+                click(btnCancel);
+                driver.switchTo().window(child);
+            }
+        }
         switchFrame(frmHeader);
         click(lnkLogout);
         Thread.sleep(2000);

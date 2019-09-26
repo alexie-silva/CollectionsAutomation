@@ -15,8 +15,8 @@ public class LoginPageCreditOfficerBrunoActions extends LoginPage {
             }*/
         try {
             waitElementToBeEnabled(txtbxUsername, 10);
-            String user = readXml("bruno");
-            String pass = readXml("passwordlow");
+            String user = readXml("usernameCreditOfficer_Bruno");
+            String pass = readXml("passwordCreditOfficer_Bruno");
 
             type(txtbxUsername, user);
             type(txtbxPassword, pass);
