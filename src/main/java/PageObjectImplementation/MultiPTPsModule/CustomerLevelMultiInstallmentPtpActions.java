@@ -111,7 +111,7 @@ public class CustomerLevelMultiInstallmentPtpActions extends CustomerLevelMultiI
 
         driver.findElement(By.xpath(txtbxDate)).clear();
         Thread.sleep(2000);
-        type(txtbxDate, "13092019");
+        type(txtbxDate, "27092019");
 
         waitElementToBeEnabled(txtbxInstallment, 2000);
         //click(txtbxAmount);

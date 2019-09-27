@@ -11,7 +11,7 @@ public class SingleInstallmentPTPsPage extends Action {
     public String dpdlstCollectionStatusActive = "//option[@value='5']";
     public String txtbxFCIDN = "//input[@id='ctl00_contentPlaceHolder_collectorSearchText']";
     public String btnSearch = "//input[@name='collectorSearchButton']";
-    public String rdbtnAccount = "//input[@value='1|3|0|0']";
+    public String rdbtnAccount = "//input[@value='1|19|0|0']";
     public String frmSearchResults = "//frame[@name='searchResultFrame']";
     public String frmFCIDN = "//iframe[@id='ctl00_contentPlaceHolder_ifrSingleView']";
     public String btnFCIDN = "//a[@onclick='toggle_tab(1); radr_setTab(1);']";
@@ -40,5 +40,9 @@ public class SingleInstallmentPTPsPage extends Action {
     public String btnSvePayment = "//input[@value='Save']";
     public String frmSave    = "//iframe[@class='RadWContentFrame']";
     public String wrdPaymentArrangement = "//td[@class='TabBg']";
-    public String btnCollapse = "//input[@id='ctl00_contentPlaceHolder_gridAccountPromise_ctl00_ctl04_GECBtnExpandColumn']";
+    public String btnWindowClose = "//img[@id='CloseButtonwinRMPMonitoring']";
+
+    public String lnkLogout = "(//*[@id='lnkSignOut'])";
+    public String lblLogoutVerification = "(//*[@id='lblMessage'])";
+    public String frmHeader = "//frame[@name='cwx_header']";
 }

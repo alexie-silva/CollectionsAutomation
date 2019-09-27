@@ -1,4 +1,5 @@
 package PageObjectImplementation.SingleInstallmentPTPsModule;
+
 import PageObject.SingleInstallmentPTPsPage.SingleInstallmentPTPsPage;
 import org.junit.Assert;
 import org.openqa.selenium.By;
@@ -6,7 +7,7 @@ import org.openqa.selenium.By;
 
 public class SingleInstallmentPTPsAction extends SingleInstallmentPTPsPage {
 
-    public void ptpSingleIntallmentCreation () throws InterruptedException{
+    public void ptpSingleIntallmentCreation () throws InterruptedException {
 
         click(lnkCollection);
 
@@ -103,7 +104,7 @@ public class SingleInstallmentPTPsAction extends SingleInstallmentPTPsPage {
 
         driver.findElement(By.xpath(txtbxDate)).clear();
         Thread.sleep(2000);
-        type(txtbxDate, "13092019");
+        type(txtbxDate, "26092019");
 
 
         //Save Created Grid Payment
@@ -128,8 +129,34 @@ public class SingleInstallmentPTPsAction extends SingleInstallmentPTPsPage {
         Thread.sleep(5000);
 
         //Verification
-        Assert.assertTrue(isElementDisplayed(wrdPaymentArrangement));
-        System.out.println("Single Instalment PTP against the full Net Debt of all accts under an FCIDN");
+        try {
+            Assert.assertTrue(isElementDisplayed(wrdPaymentArrangement));
+            System.out.println("Single Instalment PTP against the full Net Debt of all accts under an FCIDN");
+        } catch (Exception e){
+            System.out.println("Cannot Create Single PTP");
+        }
+
+
+        click(btnWindowClose);
+        Thread.sleep(5000);
+
+        driver.switchTo().window(parentWinHandle);
+
+
+    }
+
+        public void cancelPTP () throws InterruptedException {
+
+        click(lnkCollection);
+
+        switchDefault();
+        Thread.sleep(3000);
+        switchFrame(frmContent);
+        Thread.sleep(3000);
+        switchFrame(frmTopFrame);
+        Thread.sleep(3000);
+        click(dpdlstCollectionStatus);
+
 
 
 
@@ -137,3 +164,4 @@ public class SingleInstallmentPTPsAction extends SingleInstallmentPTPsPage {
 
     }
 }
+

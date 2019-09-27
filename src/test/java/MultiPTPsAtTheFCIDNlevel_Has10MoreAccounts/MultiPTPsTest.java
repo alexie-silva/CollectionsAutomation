@@ -1,19 +1,21 @@
-package MultiPTPsPageAtTheFCIDNlevel;
+package MultiPTPsAtTheFCIDNlevel_Has10MoreAccounts;
 
-import PageObjectImplementation.LoginModule.LoginPageCreditOfficerBrunoActions;
+import PageObjectImplementation.LoginModule.LoginPageActions;
 import PageObjectImplementation.LogoutModule.LogoutPageActions;
 import PageObjectImplementation.MultiPTPsModule.CustomerLevelMultiInstallmentPtpActions;
+import PageObjectImplementation.MultiPTPsModule.CustomerLevelPageActions;
 import Utilities.TestInitialize;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class CustomerLevelMultiInstallmentPtpTest extends TestInitialize {
+public class MultiPTPsTest extends TestInitialize {
 
 
-    LoginPageCreditOfficerBrunoActions login = new LoginPageCreditOfficerBrunoActions();
+    LoginPageActions login = new LoginPageActions();
     LogoutPageActions logout = new LogoutPageActions();
     CustomerLevelMultiInstallmentPtpActions multiInstallmentPtp = new CustomerLevelMultiInstallmentPtpActions();
+    CustomerLevelPageActions combine = new CustomerLevelPageActions();
 
     @BeforeClass
     public void reportConfiguration() {
@@ -40,11 +42,47 @@ public class CustomerLevelMultiInstallmentPtpTest extends TestInitialize {
         }
     }
 
+
     @Test(priority = 2, testName = "Search Account")
-    public void TC002_SingleInstallmentPtpTest() {
+    public void TC002_userCannotCreatePTP() {
         try{
             System.out.println("USER SEARCH ACCOUNT: STARTED");
-            multiInstallmentPtp.multiInstallmentPtp();
+            combine.unableToCreatePTP();
+        }catch (Exception e){
+            System.out.println("***USER SEARCH ACCOUNT: FAILED!");
+
+        }
+    }
+
+
+    @Test(priority = 3, testName = "Search Account")
+    public void TC003_SingleInstallmentPtpTest() {
+        try{
+            System.out.println("USER SEARCH ACCOUNT: STARTED");
+            combine.singleInstallmentPTP();
+        }catch (Exception e){
+            System.out.println("***USER SEARCH ACCOUNT: FAILED!");
+
+        }
+    }
+
+    @Test(priority = 4, testName = "Search Account")
+    public void TC004_MultiInstallmentPTP() {
+        try{
+            System.out.println("USER SEARCH ACCOUNT: STARTED");
+            combine.multiInstallmentPtp();
+        }catch (Exception e){
+            System.out.println("***USER SEARCH ACCOUNT: FAILED!");
+
+        }
+    }
+
+
+    @Test(priority = 5, testName = "Search Account")
+    public void TC005_MultiVaryingPTP() {
+        try{
+            System.out.println("USER SEARCH ACCOUNT: STARTED");
+            combine.multiVaryingInstallmentPtp();
         }catch (Exception e){
             System.out.println("***USER SEARCH ACCOUNT: FAILED!");
 
