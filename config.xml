@@ -23,7 +23,7 @@
 <!-- EMAIL CONFIG -->
     <entry key="senderEmailID">temenosautomation@gmail.com</entry>
     <entry key="senderPassword">DSScollections</entry>
-    <entry key="receiverEmailIDCommaSeparated">clariz.sampang@dss.asia, alexie.silva@dss.asia</entry>
+    <entry key="receiverEmailIDCommaSeparated"></entry>
     <entry key="emailSubject">Advanced Collections Automation Result</entry>
     <entry key="reportFilename">extentReport.html</entry>
     <entry key="reportPath">\\test-output\\</entry>

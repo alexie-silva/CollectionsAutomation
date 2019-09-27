@@ -5,6 +5,8 @@
     <test name="Test Cases">
         <classes>
             <class name = "PaymentArrangement.PaymentArrangement_AccountLevelTest"/>
+            <class name = "MultiPTPsAtTheFCIDNlevel_Has10MoreAccounts.MultiPTPsTest"/>
+            <class name = "SingleInstallmentPTPsForAllAccountsUnderSingleFCIDN.SingleInstallmentPTPs"/>
             <!--<class name = ""/>-->
         </classes>
     </test>
